@@ -1,0 +1,105 @@
+<!-- Aula 25 - Tabelas
+    <table>
+    
+    Prós
+        - Visualização de dados via linhas e colunas
+        - Boa acessibilidade p/ leitura dos dados
+    COntras
+        - Pouco flexível
+        - Precisa de estilização para melhor visualização
+    Não usar 
+        - Para criar seu layout
+-->
+
+<!-- Aula 26 - Tabela Básica
+-->
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    <tr>
+        <td>Marco</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Túlio</td>
+        <td>20</td>
+    </tr>
+</table>
+<br><br><br><br>
+
+<!-- Aula 27 - Organizando tabelas
+-->
+<table>
+    <caption>Pessoas Por Idade</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Marco</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Túlio</td>
+            <td>20</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+</table>
+<br><br><br><br>
+
+<!-- Aula 28/29/30/31/32 - / Tabela Complexa/ THead Complexa / TBody complexo /
+                        / Melhorando o aspecto com colgroup / Melhorando acessibilidade /
+    2 Lojas
+        Quantos produtos foram produzidos, 
+        quantos vendidos e agrupado por nome dos produtos
+-->
+<table>
+    <caption>Produtos Produzidos X Vendidos Por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: blue">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Loja 1</th>
+            <th colspan="2" scope="colgroup">Loja 2</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>

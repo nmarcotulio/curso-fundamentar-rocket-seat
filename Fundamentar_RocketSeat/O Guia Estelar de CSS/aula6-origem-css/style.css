@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+/* mais lento o @import */
+
+
+h3{
+    font-size: 60px;
+    color: black;
+    background-color: aqua;
+    font-family: 'Ranchers', cursive;;
+}

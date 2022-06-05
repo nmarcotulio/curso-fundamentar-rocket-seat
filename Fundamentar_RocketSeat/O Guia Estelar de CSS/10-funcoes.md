@@ -1,0 +1,13 @@
+# Funções
+* nome seguido de abre e fecha parênteses
+* recebe argumentos (valores)
+
+## Exemplos
+'''CSS
+@import url("http://urlaqui.com/style.css")
+
+{
+    color: rgb(255, 0, 100);
+    width: calc(100% - 10px);
+}
+'''

@@ -1,0 +1,261 @@
+<!-- Aula 10 - Semântica
+    Semântica
+
+    - dar significado
+    - elementos semânticos (melhores resultados, fácil manutenção)
+-->
+
+
+<!-- Aula 11 - Títulos e Parágrafos
+    Cabeçalhos e parágrafos
+-->
+<h1>Sobre mim</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p>Voluptatum, atque fugit nobis repellendus, qui nulla
+    cupiditate mollitia ut culpa dolor autem alias quos amet unde sequi facilis? Nostrum, cumque quidem.</p>
+
+<h2>Nascimento</h2>
+<h3>Infância</h3>
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sint cumque impedit sunt. Nesciunt omnis veniam
+    provident harum eveniet quod excepturi aut labore repudiandae fugit? Facilis iure laboriosam perferendis tempore!
+</p>
+<h3>Juventude</h3>
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sint cumque impedit sunt. Nesciunt omnis veniam
+    provident harum eveniet quod excepturi aut labore repudiandae fugit? Facilis iure laboriosam perferendis tempore!
+</p>
+
+<h2>Trabalho</h2>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae natus ipsum vel amet odit
+perspiciatis voluptatibus doloremque iusto, omnis aspernatur ducimus eos incidunt nemo quos aut tempora deleniti
+voluptate?
+
+<a href="">Saiba mais</a>
+
+
+
+<!-- Aula 12 - Listas
+    Listas
+
+    - Ordenadas
+    - Não ordenadas
+-->
+<h1>Caipiroska</h1>
+<h2>Ingredientes:</h2>
+<!-- Lista não ordenada (forma correta da lista não ordenada tem a tag pai <ul><li></li></ul> -->
+<li>1 limão;</li>
+<li>100ml de vodka;</li>
+<li>4 colheres de açúcar;</li>
+<li>5 cubos de gelo.</li>
+
+<!-- Lista ordenada-->
+<ol>
+    <li>1 limão;</li>
+    <li>100ml de vodka;</li>
+    <li>4 colheres de açúcar;</li>
+    <li>5 cubos de gelo.</li>
+</ol>
+
+
+
+<!-- Aula 13 - Citações
+    Citações
+
+    <blockquote>
+
+    <cite>
+
+    <q>
+-->
+<blockquote cite="https://google.com.br">
+    <p> O <strong> Elemento HTML <code>&lt;blockquote&gt;</code></strong>
+        (ou <em>HTML Block Quotation Element</em>) indica que um texto eterno foi citado.
+    </p>
+</blockquote>
+
+
+<p>
+    De acordo com a <a href="https://google.com.br"><cite>página MDN blockquote</cite></a>
+</p>
+
+<p>
+    O elemento quote - <code>&lt;q&gt;</code> - é <q cite="https://google.com.br">usado para citações curtas que não
+        precisam de parágrafos ou quebras de linha</q>
+</p>
+
+
+<!-- Aula 14 - Abreviações
+    Abreviações
+
+    <abbr>
+-->
+<p>
+    Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.
+</p>
+
+
+<!-- Aula 15 - Detalhes de contato
+    Detalhes de contato
+
+    <address>
+-->
+<address>
+    <p>
+        Marco Túlio <br>
+        <strong>Brasília, DF</strong>
+    </p>
+</address>
+
+<!-- Aula 16 - Listas de descrição
+    Listas de descrição
+
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+-->
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hiper texto com possibilidades</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação de texto</dd>
+
+    <dt>Language</dt>
+    <dd>Linguaguem com sua semântica</dd>
+</dl>
+
+
+
+<!-- Aula 17 - Representação de código
+    Representando códigos de computador
+
+    <code>
+        Partes genéricas do código
+
+    <pre>
+        Blocos de código, pois essa tag mantém os espaços em brancos e recuos que eu colocar no meu código
+-->
+<pre>
+    <code>
+        document.
+                 querySelector("body")
+        &lt;pre&gt;&lt;/pre&gt;
+    </code>
+</pre>
+
+
+<!-- Aula 18 - Elementos genéticos
+    Elementos genéticos
+
+    *<div> agrupar conteúdos
+    *<span> agrupar texto
+-->
+<div class="cart">
+    <span>Camiseta</span>
+    <span>R$ 99,00</span>
+</div>
+
+<!-- Aula 19 - Conhecendo a tag âncora
+    Hyperlinks - Elemento Âncora <a>
+
+    + Anatomia
+
+    + Atributos:
+     - globais (title, id, class)
+     - href (referência)
+        - para onde iremos, quando clircamos num link?
+            - url completa
+            - fragmento
+            - email
+            - telefone
+            - outros
+        - download
+        - target
+            - _self (padrão)
+            - _blank (abre uma nova guia) 
+-->
+<a href="" download="" target="">Conteúdo</a>
+
+<!-- Aula 20 - Utilizando a tag âncora
+-->
+<p>Encontre-me</p>
+<ul>
+    <li><a href="https://google.com.br" target="_blank">Website</a></li>
+    <li><a href="mailto:marco.nsouza@sempreceub.com">E-mail</a></li>
+    <li><a href="tel:">Telefone</a></li>
+</ul>
+
+<p>Saiba mais</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus neque, consectetur error, velit facere beatae
+similique est dolorem vitae soluta quisquam porro nulla natus consequuntur cupiditate veniam. Aspernatur, magnam
+provident?
+
+<h2 id="history">História</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque corporis optio atque sunt id, quo, possimus
+quasi incidunt quia eum! Numquam ipsam reprehenderit alias laudantium odit quidem totam ullam!
+
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur commodi animi cumque odit neque! Beatae iure
+commodi id odit, recusandae a cumque voluptates quia ducimus delectus hic, ratione quos.
+
+<!-- Aula 21 - Conteúdos dentro de elemento a 
+    Conteúdos dos hyperlinks
+    - qualquer conteúdo
+-->
+<a href="https://google.com.br" title="Ir para Google"><h1>Google</h1>
+    <p>posso colocar outro elemento</p>
+    <img src="https://source.unsplash.com/random" alt="">
+</a>
+
+<!-- Aula 22 - Caminhos e URLS
+    URLs e caminhos dos arquivos
+
+    - Uniform Resource Locator
+        - https://google.com.br
+        - SequÇencia de texto que define onde algo está localizado na web
+    - URLs usam caminhos para encontrar arquivos
+
+    - Caminhos dos Arquivos
+        - onde, no explorador de arquivos, um recurso está localizado
+-->
+<br>
+<a href="comenário-aula7-praticando.html" target="_blank">Abrir hyperlinks</a>
+
+<!-- Aula 23 - Como navegar pelos diretórios
+    Como navegar pelos caminhos?
+        - mesmo diretório
+        - entrando em diretórios
+        - saindo de diretórios
+        - diretório raiz (root ou pai)
+-->
+<br>
+<a href="comentario-aula8-caracteresreservados.html" target="_blank">arquivo na mesma pasta</a>
+<br>
+<a href="Aula23teste/teste.html">arquivo na pasta teste</a>
+<br>
+<a href="./comentário-aula5-atributosglobais.html">arquivos no diretório raiz</a>
+<br>
+<a href="../Starter-html/Aula23teste/teste.html">arquivos saindo do diretório</a>
+
+<!-- Aula 24 - Caminhos absolutos vs relativos
+    - Absolutos
+        - inclui protocolo e nome de domínio
+            - https://google.com.br/starter-html/comenário-aula7-praticando.html
+        - sempre apontará para o mesmo local, pois é absluto
+
+        - Relativos
+            - relativo à página aberta no momento
+            - apontará para lugares diferentes
+-->
+<a href="google.com.br">relativo: ir para o google</a>
+<a href="https://google.com.br">absoluto: ir para o google</a>
